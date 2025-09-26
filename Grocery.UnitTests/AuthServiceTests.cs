@@ -15,7 +15,7 @@ namespace Grocery.UnitTests
         private const string _validUsedEmail = "user1@mail.com";
         private const string _validUnusedEmail = "user5@mail.com";
         private const string _validPassword = "Useruser1!";
-        private const string _validName = "Bob Bladerdeeg";
+        private const string _validName = "New User";
 
         // Do "Arrange" section of unit tests in constructor to avoid code duplication.
         public AuthServiceTests()
