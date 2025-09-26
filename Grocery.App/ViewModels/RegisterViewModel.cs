@@ -13,13 +13,13 @@ namespace Grocery.App.ViewModels
         private readonly GlobalViewModel _global;
 
         [ObservableProperty]
-        private string email = "user3@mail.com";
+        private string email = "new_user@fake_mail.com";
 
         [ObservableProperty]
-        private string password = "Useruser4!";
+        private string password = "New_user_password!01";
 
         [ObservableProperty]
-        private string name = "Bob Bladerdeeg";
+        private string name = "new_user_name";
 
         [ObservableProperty]
         private string errorMessage = "";
@@ -36,13 +36,13 @@ namespace Grocery.App.ViewModels
             ErrorMessage = string.Empty;
 
             if (string.IsNullOrWhiteSpace(Email))
-                ErrorMessage += "Email moet een waarde hebben. ";
+                ErrorMessage += "Email mag niet leeg zijn. ";
 
             if (string.IsNullOrWhiteSpace(Name))
-                ErrorMessage += "Naam moet een waarde hebben. ";
+                ErrorMessage += "Naam mag niet leeg zijn. ";
 
             if (string.IsNullOrWhiteSpace(Password))
-                ErrorMessage += "Wachtwoord moet een waarde hebben. ";
+                ErrorMessage += "Wachtwoord mag niet leeg zijn. ";
             
             if (ErrorMessage != "")
                 return;
